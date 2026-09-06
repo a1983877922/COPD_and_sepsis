@@ -1,2 +1,14 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Auto-detect text files; preserve LF line endings everywhere.
+# Suppresses Windows CRLF/LF warnings during clone/checkout.
+* text=auto eol=lf
+
+# Explicit per-extension defaults (overrides auto-detect for clarity)
+*.R   text eol=lf
+*.r   text eol=lf
+*.py  text eol=lf
+*.md  text eol=lf
+*.Rmd text eol=lf
+*.sh  text eol=lf
+*.csv text eol=lf
+*.tsv text eol=lf
+*.txt text eol=lf
